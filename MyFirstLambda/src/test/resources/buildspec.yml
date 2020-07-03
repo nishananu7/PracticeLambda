@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-        nodejs: 10
+        java: 8
   build:
     commands:
           - aws cloudformation package --template-file template.yml --s3-bucket lamnewbucket --output-template-file outputtemplate.yml
